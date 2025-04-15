@@ -71,7 +71,7 @@ The project uses the following environment variables (found in .env):
 - GET api/v1/tasks_get_status: Fetch tasks based on filters (status).
 - GET api/v1/getTasks_pagination Fetch tasks based on filter (e.g, page=1&limit=3)
 
-For full API details, import the provided Postman collection with (save resopnse example) ([Imarc.postman_collection.json])(https://github.com/vivekjais1110/IMARC-GROUP/blob/main/Imarc.postman_collection.json) into Postman.
+📫 **For full API details**, import the provided Postman collection: [Imarc.postman_collection.json](https://github.com/vivekjais1110/IMARC-GROUP/blob/main/Imarc.postman_collection.json) into Postman. Make sure to check the **saved response examples** for reference.
 
 # Dependencies
 > Major dependencies used in this project include:
