@@ -1,6 +1,6 @@
 # Backend Developer Assessment
 > This project implements a backend system for managing users and tasks (JWT), using Node.js, Express, MongoDB, and MySQL.
-- ([(https://github.com/vivekjais1110/IMARC-GROUP/blob/main/Node%20js%20Assignment.docx)])
+- [(Node js Assignment.docx)](https://github.com/vivekjais1110/IMARC-GROUP/blob/main/Node%20js%20Assignment.docx)
 
 # Features
 - User registration and login.
