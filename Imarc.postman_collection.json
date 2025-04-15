@@ -1,0 +1,896 @@
+{
+	"info": {
+		"_postman_id": "8e4e19ff-6e6a-4bab-bfec-1f9df54762ad",
+		"name": "Imrac",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38312840"
+	},
+	"item": [
+		{
+			"name": "register",
+			"item": [
+				{
+					"name": "http://localhost:6000/api/v1/register",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"vivek@gmail.com\",\r\n  \"password\": \"vivek@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:6000/api/v1/register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"vivek@gmail.com\",\r\n  \"password\": \"vivek@123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:6000/api/v1/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "6000",
+									"path": [
+										"api",
+										"v1",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "223"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"df-KjTJxz25tRze9SGdhYldct2XS1g\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 15 Apr 2025 18:57:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User registered\",\n    \"user\": {\n        \"id\": 2,\n        \"email\": \"vivek@gmail.com\",\n        \"password\": \"$2b$10$Sv6m49Djhe0R5pPnBz5Up.YIBCpOoX6Q9U5COnKkxvX2TtsV3hoXO\",\n        \"updatedAt\": \"2025-04-15T18:57:54.707Z\",\n        \"createdAt\": \"2025-04-15T18:57:54.707Z\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "login",
+			"item": [
+				{
+					"name": "http://localhost:6000/api/v1/login",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"vivek@gmail.com\",\r\n  \"password\": \"vivek@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:6000/api/v1/login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"vivek@gmail.com\",\r\n  \"password\": \"vivek@123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:6000/api/v1/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "6000",
+									"path": [
+										"api",
+										"v1",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "178"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b2-EiBY+4sNwphWdq1qvrTEis00rx0\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 15 Apr 2025 18:59:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Login successful\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzQ0NzQzNTUwLCJleHAiOjE3NDQ3NDcxNTB9.-gVLFt25-Rzat-IqV7hG_1BVCpNnzUFhWa8-2Iz7LPc\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "task create",
+			"item": [
+				{
+					"name": "http://localhost:6000/api/v1/tasks",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzQ0NzQzNTUwLCJleHAiOjE3NDQ3NDcxNTB9.-gVLFt25-Rzat-IqV7hG_1BVCpNnzUFhWa8-2Iz7LPc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Complete assignment 333333333\",\r\n  \"description\": \"Finish Node.js task manager project 333333333\",\r\n  \"dueDate\": \"2025-04-21\",\r\n  \"status\": \"in-progress\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/tasks_create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"tasks_create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:6000/api/v1/tasks",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzQ0NzQzNTUwLCJleHAiOjE3NDQ3NDcxNTB9.-gVLFt25-Rzat-IqV7hG_1BVCpNnzUFhWa8-2Iz7LPc",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"title\": \"Complete assignment 333333333\",\r\n  \"description\": \"Finish Node.js task manager project 333333333\",\r\n  \"dueDate\": \"2025-04-21\",\r\n  \"status\": \"in-progress\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:6000/api/v1/tasks_create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "6000",
+									"path": [
+										"api",
+										"v1",
+										"tasks_create"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "293"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"125-jdpXolVWovKmX0daNUU9aX3NujA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 15 Apr 2025 19:01:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Task created\",\n    \"data\": {\n        \"id\": 5,\n        \"userId\": 2,\n        \"title\": \"Complete assignment 333333333\",\n        \"description\": \"Finish Node.js task manager project 333333333\",\n        \"dueDate\": \"2025-04-21T00:00:00.000Z\",\n        \"status\": \"in-progress\",\n        \"updatedAt\": \"2025-04-15T19:01:24.495Z\",\n        \"createdAt\": \"2025-04-15T19:01:24.495Z\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "task get",
+			"item": [
+				{
+					"name": "http://localhost:6000/api/v1/tasks_get",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzQ0NzQzNTUwLCJleHAiOjE3NDQ3NDcxNTB9.-gVLFt25-Rzat-IqV7hG_1BVCpNnzUFhWa8-2Iz7LPc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/tasks_get",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"tasks_get"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:6000/api/v1/tasks_get",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzQ0NzQzNTUwLCJleHAiOjE3NDQ3NDcxNTB9.-gVLFt25-Rzat-IqV7hG_1BVCpNnzUFhWa8-2Iz7LPc",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:6000/api/v1/tasks_get",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "6000",
+									"path": [
+										"api",
+										"v1",
+										"tasks_get"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "764"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2fc-Jjd6RfW0F5w/uY3aXn8lFn3IWc8\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 15 Apr 2025 19:02:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"tasks\": [\n        {\n            \"id\": 3,\n            \"title\": \"Complete assignment\",\n            \"description\": \"Finish Node.js task manager project\",\n            \"status\": \"in-progress\",\n            \"dueDate\": \"2025-04-19T00:00:00.000Z\",\n            \"userId\": 2,\n            \"createdAt\": \"2025-04-15T19:00:49.000Z\",\n            \"updatedAt\": \"2025-04-15T19:00:49.000Z\"\n        },\n        {\n            \"id\": 4,\n            \"title\": \"Complete assignment 222222\",\n            \"description\": \"Finish Node.js task manager project 22222\",\n            \"status\": \"in-progress\",\n            \"dueDate\": \"2025-04-20T00:00:00.000Z\",\n            \"userId\": 2,\n            \"createdAt\": \"2025-04-15T19:01:10.000Z\",\n            \"updatedAt\": \"2025-04-15T19:01:10.000Z\"\n        },\n        {\n            \"id\": 5,\n            \"title\": \"Complete assignment 333333333\",\n            \"description\": \"Finish Node.js task manager project 333333333\",\n            \"status\": \"in-progress\",\n            \"dueDate\": \"2025-04-21T00:00:00.000Z\",\n            \"userId\": 2,\n            \"createdAt\": \"2025-04-15T19:01:24.000Z\",\n            \"updatedAt\": \"2025-04-15T19:01:24.000Z\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "task update",
+			"item": [
+				{
+					"name": "http://localhost:6000/api/v1/tasks_update/67875858f9d42767e7ec111c",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNzM2OTM2NTQ3LCJleHAiOjE3MzY5NDAxNDd9.0Np_TrVJZN4-dlxeSMYYQhtgsjbiOgFPGjF2mrZkBwI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"status\": \"In Progress\",\r\n  \"priority\": \"High\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/api/v1/tasks_update/67875858f9d42767e7ec111c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"tasks_update",
+								"67875858f9d42767e7ec111c"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:6000/api/v1/tasks_update/67875858f9d42767e7ec111c",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzQ0NzQzNTUwLCJleHAiOjE3NDQ3NDcxNTB9.-gVLFt25-Rzat-IqV7hG_1BVCpNnzUFhWa8-2Iz7LPc",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"status\": \"pending\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:6000/api/v1/tasks_update/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "6000",
+									"path": [
+										"api",
+										"v1",
+										"tasks_update",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "303"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"12f-l8Jj2wSKEEMTg9gjfRSVNs5Qp+g\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 15 Apr 2025 19:04:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Task updated successfully.\",\n    \"task\": {\n        \"id\": 5,\n        \"title\": \"Complete assignment 333333333\",\n        \"description\": \"Finish Node.js task manager project 333333333\",\n        \"status\": \"pending\",\n        \"dueDate\": \"2025-04-21T00:00:00.000Z\",\n        \"userId\": 2,\n        \"createdAt\": \"2025-04-15T19:01:24.000Z\",\n        \"updatedAt\": \"2025-04-15T19:04:57.275Z\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "task delete",
+			"item": [
+				{
+					"name": "http://localhost:6000/api/v1/tasks_delete/...",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzQ0NzQzNTUwLCJleHAiOjE3NDQ3NDcxNTB9.-gVLFt25-Rzat-IqV7hG_1BVCpNnzUFhWa8-2Iz7LPc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/tasks_delete/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"tasks_delete",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:6000/api/v1/tasks_delete/...",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzQ0NzQzNTUwLCJleHAiOjE3NDQ3NDcxNTB9.-gVLFt25-Rzat-IqV7hG_1BVCpNnzUFhWa8-2Iz7LPc",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:6000/api/v1/tasks_delete/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "6000",
+									"path": [
+										"api",
+										"v1",
+										"tasks_delete",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"28-KNXwoN+noDF/jJcTYIh6QYR6GT4\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 15 Apr 2025 19:05:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Task deleted successfully.\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "task get by status filter",
+			"item": [
+				{
+					"name": "http://localhost:6000/api/v1/tasks_get_status?status=In Progress",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzQ0NzQzNTUwLCJleHAiOjE3NDQ3NDcxNTB9.-gVLFt25-Rzat-IqV7hG_1BVCpNnzUFhWa8-2Iz7LPc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/tasks_get_status?status=in-progress",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"tasks_get_status"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "in-progress"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:6000/api/v1/tasks_get_status?status=In Progress",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzQ0NzQzNTUwLCJleHAiOjE3NDQ3NDcxNTB9.-gVLFt25-Rzat-IqV7hG_1BVCpNnzUFhWa8-2Iz7LPc",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:6000/api/v1/tasks_get_status?status=in-progress",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "6000",
+									"path": [
+										"api",
+										"v1",
+										"tasks_get_status"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "in-progress"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "251"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"fb-pAbkZeWyt73nbUYiiyygrUD4kVw\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 15 Apr 2025 19:06:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"tasks\": [\n        {\n            \"id\": 3,\n            \"title\": \"Complete assignment\",\n            \"description\": \"Finish Node.js task manager project\",\n            \"status\": \"in-progress\",\n            \"dueDate\": \"2025-04-19T00:00:00.000Z\",\n            \"userId\": 2,\n            \"createdAt\": \"2025-04-15T19:00:49.000Z\",\n            \"updatedAt\": \"2025-04-15T19:00:49.000Z\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "pagination",
+			"item": [
+				{
+					"name": "http://localhost:6000/api/v1/getTasks_pagination?page=1&limit=3",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzQ0NzQzNTUwLCJleHAiOjE3NDQ3NDcxNTB9.-gVLFt25-Rzat-IqV7hG_1BVCpNnzUFhWa8-2Iz7LPc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:6000/api/v1/getTasks_pagination?page=1&limit=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"getTasks_pagination"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:6000/api/v1/getTasks_pagination?page=1&limit=3",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzQ0NzQzNTUwLCJleHAiOjE3NDQ3NDcxNTB9.-gVLFt25-Rzat-IqV7hG_1BVCpNnzUFhWa8-2Iz7LPc",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:6000/api/v1/getTasks_pagination?page=1&limit=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "6000",
+									"path": [
+										"api",
+										"v1",
+										"getTasks_pagination"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "507"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1fb-Q+GIkqqG0Ol2rEbcaFkYVvZyry0\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 15 Apr 2025 19:08:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"tasks\": [\n        {\n            \"id\": 3,\n            \"title\": \"Complete assignment\",\n            \"description\": \"Finish Node.js task manager project\",\n            \"status\": \"in-progress\",\n            \"dueDate\": \"2025-04-19T00:00:00.000Z\",\n            \"userId\": 2,\n            \"createdAt\": \"2025-04-15T19:00:49.000Z\",\n            \"updatedAt\": \"2025-04-15T19:00:49.000Z\"\n        },\n        {\n            \"id\": 5,\n            \"title\": \"Complete assignment 333333333\",\n            \"description\": \"Finish Node.js task manager project 333333333\",\n            \"status\": \"pending\",\n            \"dueDate\": \"2025-04-21T00:00:00.000Z\",\n            \"userId\": 2,\n            \"createdAt\": \"2025-04-15T19:01:24.000Z\",\n            \"updatedAt\": \"2025-04-15T19:04:57.000Z\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
