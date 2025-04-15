@@ -7,7 +7,6 @@
 - JWT-based authentication.
 - CRUD operations for tasks.
 - MySQL for relational data.
-- MongoDB for task storage.
 - Task prioritization and status management.
 - Pagination and Filter.
 - Node Mailer.
@@ -21,12 +20,11 @@ its due date).
 # Setup and Installation
 ~ Ensure the following tools are installed on your system:
 - Node.js (v12+)
-- MongoDB installed and running locally.
 - MySQL server installed.
 
 # Clone the repository:
 ```sh
-git clone https://github.com/vivekjais1110/TV9_NODE.git
+git clone https://github.com/vivekjais1110/IMARC-GROUP.git
 ```
 # Install dependencies:
 ```sh
@@ -37,10 +35,9 @@ npm install
 Create a .env file in the root directory.
 Use the example below or customize as needed:
 ```sh
-MONGO_URI=mongodb://localhost:27017/backend-assessment
 PORT=6000
-JWT_SECRET=tv9
-SQL_DB=task_manager
+JWT_SECRET=imarc
+SQL_DB=imarc_group
 SQL_USER=root
 SQL_PASSWORD=root
 SQL_HOST=localhost
@@ -54,7 +51,6 @@ npm start
 # Environment Variables
 The project uses the following environment variables (found in .env):
 
-- MONGO_URI: MongoDB connection URI.
 - PORT: Port for the backend server.
 - JWT_SECRET: Secret for signing JWT tokens.
 - SQL_DB, SQL_USER, SQL_PASSWORD, SQL_HOST, SQL_DIALECT: MySQL database configuration.
@@ -65,9 +61,9 @@ The project uses the following environment variables (found in .env):
 - POST /api/v1/login: Login and receive a JWT token.
 
 > Task Routes
-- POST /api/v1/tasks: Create a new task.
-- GET /api/v1/tasks_get: Fetch tasks based on filters (status, priority, due date).
-- PUT /api/v1/tasks_update/:id: Update a task by ID (status, priority).
+- POST /api/v1/tasks_create: Create a new task.
+- GET /api/v1/tasks_get: Fetch All tasks.
+- PUT /api/v1/tasks_update/:id: Update a task by ID (status).
 - DELETE /api/v1/tasks_delete/:id: Delete a task by ID.
  
 # Bonus features API
@@ -81,8 +77,9 @@ For full API details, import the provided Postman collection with (save resopnse
 > Major dependencies used in this project include:
 
 - Express: Web framework.
-- Mongoose: MongoDB object modeling.
 - Sequelize: ORM for MySQL.
 - JWT: Token-based authentication.
 - Nodemailer: Email sending.
 - Node-Cron: Scheduling tasks.
+- express-validator: Validator.
+  
