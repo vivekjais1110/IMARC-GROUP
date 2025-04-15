@@ -1,40 +1,56 @@
-# Backend Developer Assessment
-> This project implements a backend system for managing users and tasks (JWT), using Node.js, Express, MongoDB, and MySQL.
-- [(Node js Assignment.docx)](https://github.com/vivekjais1110/IMARC-GROUP/blob/main/Node%20js%20Assignment.docx)
+# 🚀 Backend Developer Assessment (IMARC)
 
-# Features
-- User registration and login.
-- JWT-based authentication.
-- CRUD operations for tasks.
-- MySQL for relational data.
-- Task prioritization and status management.
-- Pagination and Filter.
-- Node Mailer.
+A backend system for managing users and tasks, powered by **Node.js**, **Express**, **JWT Authentication**, and **MySQL** with **Sequelize ORM**.
 
-# Bonus Features: 
-- Filter based report on the status of task. 
-- Implement task deadlines notifications (send an email notification when a task is nearing 
-its due date). 
-- Implement pagination for retrieving the list of tasks. 
+📄 [Assignment Document → Node js Assignment.docx](https://github.com/vivekjais1110/IMARC-GROUP/blob/main/Node%20js%20Assignment.docx)
 
-# Setup and Installation
-~ Ensure the following tools are installed on your system:
-- Node.js (v12+)
-- MySQL server installed.
+---
 
-# Clone the repository:
-```sh
+## 📌 Features
+
+- 🔐 Secure User Authentication (JWT + bcrypt)
+- 🧾 CRUD Operations on Tasks (Create, Read, Update, Delete)
+- 👢 Task Prioritization & Status Management
+- 📊 Task Pagination and Filtering
+- ✉️ Task Deadline Notifications via Nodemailer
+- 📥 Express Validator for Request Validation
+- 🧠 Modular Architecture with Middleware, Controllers & Routes
+
+---
+
+## ✨ Bonus Features
+
+- 📈 Filter-based status reports
+- ⏰ Deadline alerts using `node-cron` + `nodemailer`
+- 📄 Pagination support (`?page=1&limit=3`)
+
+---
+
+## ⚙️ Setup & Installation
+
+Make sure you have the following tools installed:
+
+- ✅ Node.js (v12+)
+- ✅ MySQL
+
+### 🔁 Clone the Repository
+
+```bash
 git clone https://github.com/vivekjais1110/IMARC-GROUP.git
+cd IMARC-GROUP
 ```
-# Install dependencies:
-```sh
+
+### 📦 Install Dependencies
+
+```bash
 npm install
 ```
 
-# Configure environment variables:
-Create a .env file in the root directory.
-Use the example below or customize as needed:
-```sh
+### 🔐 Environment Configuration
+
+Create a `.env` file in the root directory and configure:
+
+```env
 PORT=6000
 JWT_SECRET=imarc
 SQL_DB=imarc_group
@@ -43,43 +59,76 @@ SQL_PASSWORD=root
 SQL_HOST=localhost
 SQL_DIALECT=mysql
 ```
-# Start the server:
-```sh
+
+### ▶️ Run the Server
+
+```bash
 npm start
 ```
 
-# Environment Variables
-The project uses the following environment variables (found in .env):
+---
 
-- PORT: Port for the backend server.
-- JWT_SECRET: Secret for signing JWT tokens.
-- SQL_DB, SQL_USER, SQL_PASSWORD, SQL_HOST, SQL_DIALECT: MySQL database configuration.
+## 🔑 Environment Variables
 
-# API Endpoints
-> User Routes
-- POST /api/v1/register: Register a new user.
-- POST /api/v1/login: Login and receive a JWT token.
+| Variable       | Description              |
+| -------------- | ------------------------ |
+| `PORT`         | Server Port              |
+| `JWT_SECRET`   | JWT Signing Secret       |
+| `SQL_DB`       | MySQL Database Name      |
+| `SQL_USER`     | MySQL Username           |
+| `SQL_PASSWORD` | MySQL Password           |
+| `SQL_HOST`     | Database Host            |
+| `SQL_DIALECT`  | Database Dialect (mysql) |
 
-> Task Routes
-- POST /api/v1/tasks_create: Create a new task.
-- GET /api/v1/tasks_get: Fetch All tasks.
-- PUT /api/v1/tasks_update/:id: Update a task by ID (status).
-- DELETE /api/v1/tasks_delete/:id: Delete a task by ID.
- 
-# Bonus features API
-> NODE MAILER WITH 'node-cron' (send an email or log a notification when a task is nearing its due date)
-- GET api/v1/tasks_get_status: Fetch tasks based on filters (status).
-- GET api/v1/getTasks_pagination Fetch tasks based on filter (e.g, page=1&limit=3)
+---
 
-📫 **For full API details**, import the provided Postman collection: [Imarc.postman_collection.json](https://github.com/vivekjais1110/IMARC-GROUP/blob/main/Imarc.postman_collection.json) into Postman. Make sure to check the **saved response examples** for reference.
+## 📱 API Endpoints
 
-# Dependencies
-> Major dependencies used in this project include:
+### 👤 User Routes
 
-- Express: Web framework.
-- Sequelize: ORM for MySQL.
-- JWT: Token-based authentication.
-- Nodemailer: Email sending.
-- Node-Cron: Scheduling tasks.
-- express-validator: Validator.
-  
+| Method | Endpoint           | Description   |
+| ------ | ------------------ | ------------- |
+| POST   | `/api/v1/register` | Register user |
+| POST   | `/api/v1/login`    | User login    |
+
+### ✅ Task Routes
+
+| Method | Endpoint                   | Description          |
+| ------ | -------------------------- | -------------------- |
+| POST   | `/api/v1/tasks_create`     | Create new task      |
+| GET    | `/api/v1/tasks_get`        | Get all tasks        |
+| PUT    | `/api/v1/tasks_update/:id` | Update task (status) |
+| DELETE | `/api/v1/tasks_delete/:id` | Delete task          |
+
+### 🚰 Bonus API Features
+
+| Endpoint                          | Feature                      |
+| --------------------------------- | ---------------------------- |
+| GET `/api/v1/tasks_get_status`    | Filter tasks by status       |
+| GET `/api/v1/getTasks_pagination` | Paginated task fetch         |
+| `Cron Job`                        | Email notification for tasks |
+
+---
+
+## 🧪 Postman Collection
+
+📢 For complete API testing, import this collection into Postman:
+
+🔗 [Imarc.postman_collection.json](https://github.com/vivekjais1110/IMARC-GROUP/blob/main/Imarc.postman_collection.json)
+
+✅ Includes saved response examples for quick reference!
+
+---
+
+## 📦 Dependencies
+
+| Library             | Use Case           |
+| ------------------- | ------------------ |
+| `express`           | Core web server    |
+| `sequelize`         | ORM for MySQL      |
+| `jsonwebtoken`      | JWT Authentication |
+| `bcryptjs`          | Password hashing   |
+| `nodemailer`        | Sending emails     |
+| `node-cron`         | Task scheduling    |
+| `express-validator` | Input validation   |
+
